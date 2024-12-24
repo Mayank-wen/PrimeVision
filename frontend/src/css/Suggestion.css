@@ -1,0 +1,19 @@
+.suggestions-grid {
+    display: flex;
+    gap: 20px;
+  }
+  .suggestion-card{
+    transition: transform 0.3s, box-shadow 0.3s
+  }
+  .suggestion-card img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+  }
+ .suggestion-card p{
+  text-align: center;
+ } 
+ .suggestion-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

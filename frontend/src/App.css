@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+.main-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+
