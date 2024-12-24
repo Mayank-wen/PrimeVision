@@ -7,7 +7,7 @@ import { setContext } from '@apollo/client/link/context';
 import { gql } from '@apollo/client';
 require("dotenv").config();
 
-const uri = process.env.REACT_APP_API_URI || 'http://localhost:4001/api' 
+const uri = 'https://primevision.onrender.com/api'
 const httpLink = createHttpLink({ uri });
 
 const cache = new InMemoryCache();
