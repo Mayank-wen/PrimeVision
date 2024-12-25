@@ -70,6 +70,14 @@ const Login = () => {
           <button className="btn" type="submit" disabled={loading}>
             Login
           </button>
+          <p>OR</p>
+          <button 
+            className="btn signup-btn" 
+            type="button" 
+            onClick={() => navigate('/signup')}
+          >
+            Sign Up
+          </button>
           {error && <p>Error: {error.message}</p>}  
         </form>
       </div>
@@ -113,7 +121,7 @@ const StyledWrapper = styled.div`
     color:white;
     border: none;
     outline: none;
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid  #00d4ff;;
     transition: all 400ms;
   }
 
@@ -127,20 +135,31 @@ const StyledWrapper = styled.div`
     height: 3rem;
     width: 20rem;
     margin-top: 0.5rem;
-  background-color
-  : #00d4ff;
-    border: 0;
-    border-radius: 0.5rem;
-    border: none;
+    border: 2px solid #00d4ff;
+    border-radius: 0.5rem;  
+    background-color:transparent;
+    color: #00d4ff;
     font-size: 1.2rem;
     transition: all 400ms;
     cursor: pointer;
+  }
 
+  .signup-btn {
+    background-color: transparent;
+    border: 2px solid #00d4ff;
+    color: #00d4ff;
+  margin-top:-5px;
+  }
+
+  .signup-btn:hover {
+    background-color: #00d4ff;
+    color :black;
   }
 
   .btn:hover {
-    background-color:white ;
+    background-color:#00d4ff; ;
     box-shadow: none;
+    color:black;
   }
 `;
 
