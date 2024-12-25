@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const Input = ({ onSearch, placeholder }) => {
+const Input = ({ onSearch, placeholder, onInputClick }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (e) => {
@@ -19,6 +19,7 @@ const Input = ({ onSearch, placeholder }) => {
           placeholder={placeholder || "Search something"}
           value={searchTerm}
           onChange={handleChange}
+          onClick={onInputClick}
         />
         <button className="searchButton">
           <svg xmlns="http://www.w3.org/2000/svg" width={29} height={29} viewBox="0 0 29 29" fill="none">
