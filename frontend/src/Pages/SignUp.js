@@ -128,7 +128,7 @@ const StyledWrapper = styled.div`
   }
 
   .title {
-    color: wheat;
+    color: #00d4ff;
     margin: 3rem 0;
     font-size: 2rem;
   }
@@ -138,10 +138,10 @@ const StyledWrapper = styled.div`
     padding: 1rem 0.5rem;
     width: 20rem;
     background-color: inherit;
-    color: wheat;
+    color:white;
     border: none;
     outline: none;
-    border-bottom: 1px solid wheat;
+    border-bottom: 1px solid  #00d4ff;;
     transition: all 400ms;
   }
 
@@ -150,23 +150,24 @@ const StyledWrapper = styled.div`
     border: none;
     border-radius: 0.5rem;
   }
-
-  .btn {
+ .btn {
     height: 3rem;
     width: 20rem;
-    margin-top: 3rem;
-    background-color: #00d4ff;
-    border-radius: 0.5rem;
-    border: none;
+    margin-top: 0.5rem;
+    border: 2px solid #00d4ff;
+    border-radius: 0.5rem;  
+    background-color:transparent;
+    color: #00d4ff;
     font-size: 1.2rem;
     transition: all 400ms;
     cursor: pointer;
   }
-
-  .btn:hover {
-    background-color: white;
+   .btn:hover {
+    background-color:#00d4ff; ;
     box-shadow: none;
+    color:black;
   }
+
 
   .error {
     color: red;
